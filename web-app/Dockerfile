@@ -18,4 +18,4 @@ COPY . .
 # expose port for communication
 EXPOSE 3000
 
-CMD ["npm start"]
+CMD ["npm", "start"]
