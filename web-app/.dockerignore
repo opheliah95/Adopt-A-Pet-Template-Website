@@ -1,0 +1,4 @@
+# list of items to ignore 
+build/
+node_modules/
+Dockerfile
