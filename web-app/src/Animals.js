@@ -1,4 +1,4 @@
-export const animals = [
+const animals = [
     {
       id: 1,
       name: "Ginger",
@@ -13,3 +13,5 @@ export const animals = [
         description: "Mike is a 2 year old chihuahua"
       }
 ];
+
+export {animals}
