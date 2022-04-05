@@ -17,7 +17,7 @@ class SingleCard extends React.Component {
   render() {
     let items = animals.map((item) => {
       return (
-        <Col>
+        <Col className="mt-3">
           <Card style={{ width: "18rem" }}>
             <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
