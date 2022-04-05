@@ -8,10 +8,8 @@ import Container from 'react-bootstrap/Container';
 ReactDOM.render(
   <React.StrictMode>
     <Container>
-      <Row xs={1} md={6} xl={10}>
-        <Col xs={2} md={6} xl={10}>
-          <SingleCard />
-        </Col>
+      <Row xs={1} md={3} xl={6}>
+      <SingleCard />
       </Row>
     </Container>
   </React.StrictMode>,
