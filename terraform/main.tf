@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region  = var.region
+  region = var.region
 }
 
 resource "aws_instance" "app_server" {
@@ -18,6 +18,6 @@ resource "aws_instance" "app_server" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "MyWebServer"
+    Name = var.server_name
   }
 }
