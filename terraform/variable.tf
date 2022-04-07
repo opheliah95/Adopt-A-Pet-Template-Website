@@ -21,3 +21,8 @@ variable "server_name" {
   description = "The name of my ec2 instance"
   default     = "My Web Server"
 }
+
+variable "aws_keyname" {
+  type        = string
+  description = "name of aws priavate key"
+}

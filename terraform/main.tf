@@ -16,7 +16,7 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = var.ami
   instance_type = var.instance_type
-
+  key_name      = var.aws_keyname
   tags = {
     Name = var.server_name
   }
