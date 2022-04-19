@@ -4,7 +4,7 @@ import "./Animals";
 import React from "react";
 import { animals } from "./Animals";
 import {Row, Col} from "react-bootstrap";
-
+import "./css/Card.css"
 class SingleCard extends React.Component {
   constructor() {
     super();
