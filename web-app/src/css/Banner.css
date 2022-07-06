@@ -1,0 +1,7 @@
+.banner-header{
+    justify-content: center;
+    display: flex;
+    background-color: rgb(192, 45, 26);
+    padding: 2em;
+    color: #fff;
+}
