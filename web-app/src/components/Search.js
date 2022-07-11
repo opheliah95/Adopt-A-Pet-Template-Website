@@ -11,8 +11,6 @@ const SearchBar = (prop) => {
     const searchStyle = {
         container: isWide => (
             {
-                justifyContent: 'right',
-                alignItems: 'right',
                 display: 'flex',
                 padding: 0
             }

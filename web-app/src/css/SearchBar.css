@@ -1,6 +1,5 @@
 @media all and (min-width: 1500px) {
   .row.grid-center {
-    justify-content: space-between;
     display: flex;
   }
 
@@ -9,6 +8,7 @@
     align-items: center;
     padding: 20px;
   }
+
 }
 
 .searchBar {
@@ -23,6 +23,7 @@ button.searchButton {
     border-color:#f57f17;
     padding: 0% !important;
     border-radius: 0px 25px 25px 0px;
+
 }
 
 input.form-control {
