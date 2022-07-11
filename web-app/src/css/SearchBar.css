@@ -1,0 +1,14 @@
+@media all and (min-width: 1500px){
+  
+      .row.grid-center {
+        justify-content: space-between;
+        display: flex;
+      }
+
+      .col{
+        flex: 1 1;
+        align-items: baseline;
+    } 
+      
+}
+
