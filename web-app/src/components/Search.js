@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import { Row, Col } from 'react-bootstrap'
 import '../css/SearchBar.css'
+import {ReactComponent as ReactLogo} from '../icons/search.svg';
 
 const SearchBar = (prop) => {
     // inline styling
@@ -12,8 +13,8 @@ const SearchBar = (prop) => {
             {
                 justifyContent: 'right',
                 alignItems: 'right',
-                color: 'blue',
-                display: 'flex'
+                display: 'flex',
+                padding: 0
             }
         )
 
@@ -27,7 +28,7 @@ const SearchBar = (prop) => {
     const [matches, setMatches] = useState(mediaMatch.matches);
 
     // size of search box
-    const searchBoxSize = matches? 7: 6;
+    const searchBoxSize = matches? 8: 6;
 
     // when input is updated, update the match
     useEffect(() => {
@@ -54,12 +55,12 @@ const SearchBar = (prop) => {
         <Container className="searchBar">
             <Form className="searchInput" onSubmit={handleSubmit}>
                 <Row className="grid-center">
-                    <Col md={2} lg={2} xs={1}><Form.Label>Search A Pet</Form.Label></Col>
-                    <Col xs={3} lg={searchBoxSize} md={6}>
-                        <Form.Control placeholder="Enter a pet" value={searchInput}
+                    <Col md={1} lg={1} xs={1}><ReactLogo /></Col>
+                    <Col xs={3} lg={searchBoxSize} md={6} className="noPad">
+                        <Form.Control placeholder="Enter the type of the pet" value={searchInput}
                             onChange={updateVal} />
                     </Col>
-                    <Col md={3} lg={3} xs={1} style={searchStyle.container(matches)}><Button type='submit'> Search</Button></Col>
+                    <Col md={2} lg={2} xs={2} style={searchStyle.container(matches)}><Button type='submit' className="searchButton noPad"> Search</Button></Col>
                 </Row>
             </Form>
 
