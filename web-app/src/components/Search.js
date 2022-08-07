@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import { Row, Col } from 'react-bootstrap'
 import '../css/SearchBar.css'
-import {ReactComponent as ReactLogo} from '../icons/search.svg';
+import { ReactComponent as ReactLogo } from '../icons/search.svg';
 
 const SearchBar = (prop) => {
     // inline styling
@@ -26,7 +26,7 @@ const SearchBar = (prop) => {
     const [matches, setMatches] = useState(mediaMatch.matches);
 
     // size of search box
-    const searchBoxSize = matches? 8: 6;
+    const searchBoxSize = matches ? 8 : 6;
 
     // when input is updated, update the match
     useEffect(() => {
@@ -50,10 +50,15 @@ const SearchBar = (prop) => {
     }
 
     return (
-        <Container className="searchBar">
+        <Container className="searchBar" flex>
             <Form className="searchInput" onSubmit={handleSubmit}>
                 <Row className="grid-center">
-                    <Col md={1} lg={1} xs={1}><ReactLogo /></Col>
+                    <Col md={1} lg={1} xs={1} className="searchLogo">
+                        <div className="searchIcon">
+                            <ReactLogo />
+                        </div>
+
+                    </Col>
                     <Col xs={3} lg={searchBoxSize} md={6} className="noPad">
                         <Form.Control placeholder="Enter the type of the pet" value={searchInput}
                             onChange={updateVal} />
